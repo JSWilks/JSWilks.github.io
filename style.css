@@ -4,6 +4,7 @@
 }
 
 main {
+    margin-top: 21vh;
     background-image: url(/images/raptor_draft5.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -12,11 +13,18 @@ main {
 }
 
 header {
+    position: fixed;
+    top: 0;
+    width: auto;
+    
+    margin: -1%;
     display: flex;
     background: slategray;
-    border:  black solid 3px;
+    border-bottom:  black solid 4px;
+    border-radius: 5px;
     display: grid;
-
+    padding-top: 1%;
+    padding-left: 1%;
     justify-content: space-between;
     align-content: stretch;
     grid-template-columns: 3fr 1fr 1fr;
@@ -37,19 +45,34 @@ header {
     display: grid;
     grid-area: 'name';
 }
+#title{
+    flex-grow: 3;
+    border: none;
+    position: top;
+    justify-self: center;
+    font-size: 1.5rem;
+    font-family: Roboto;
+    grid-area: 'quote' 'quote' 'quote';
+}
 #quote {
     /* background: yellow; */
     flex-grow: 3;
     border: none;
-    position: top;
+    position: relative ;
+    padding-top: 2%;
     font-size: 1.5rem;
     font-family: Spectral;
     grid-area: 'quote' 'quote' 'quote';
 }
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
 nav {
-    
     background-color: rgba(169, 169, 169, 0.9);
-    box-sizing: border-box;
+    box-sizing: content-box;
     padding-right: 10px;
     flex-flow: column;
     flex-grow: 1;
@@ -65,13 +88,32 @@ li {
     text-shadow: black;
     font-weight: bold;
     text-decoration: black;
+    list-style-type: none;
+    line-height: 1.5em;
 }
 
 #logo {
     background-color: transparent;
     grid-area: logo-links;
 }
-
+#projects {
+    background: rgba(169, 169, 169, 0.95);
+    border: solid black 2px;
+    border-radius: 3px;
+}
+#acting {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: bold;
+    border: solid black 3px; 
+    margin: 0;
+    padding: 0;
+    background: rgba(169, 169, 169, 0.95);
+}
+iframe {
+    border: solid black;
+}
 #about-me {
     margin-top: 5px;
     border: black solid 5px;

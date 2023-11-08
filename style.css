@@ -99,28 +99,51 @@ li {
     background-color: transparent;
     grid-area: logo-links;
 }
+
+.skills-list {
+    display: flex;
+    flex-direction: row;
+    background: rgba(169, 169, 169, 0.95);
+    font-family: Roboto;
+    font-weight: bold;
+    padding: 5px;
+    
+}
+
+li.skills-list li {
+    border: 2px solid black;
+}
+
 #projects {
     background: rgba(169, 169, 169, 0.95);
     border: solid black 2px;
     border-radius: 3px;
 }
-#acting {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-weight: bold;
-    border: solid black 3px; 
-    margin: 0;
-    padding: 0;
-    background: rgba(169, 169, 169, 0.95);
-}
-iframe {
-    border: solid black;
-}
+
 #about-me {
     margin-top: 5px;
     border: black solid 5px;
     background: #fff;
     background-color: rgba(169, 169, 169, 0.95);
     min-height: 15vh;
+}
+
+#bio {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: grid;
+
+    grid-row: auto;
+    padding: 2%;
+}
+
+#back {
+    padding: 2%;
+}
+
+footer {
+    display: flex;
+    background: darkgray;
+    border: solid transparent 10px;
+    border-image: linear-gradient(0.15turn, grey 30%, darkgray 60%);
+    border-image-slice: 1;
 }

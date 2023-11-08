@@ -4,27 +4,30 @@
 }
 
 main {
-    margin-top: 21vh;
+    margin-top: 22.5vh;
+    
     background-image: url(/images/raptor_draft5.png);
     background-size: contain;
     background-repeat: no-repeat;
-    background-color: darkgrey;
+    background-color: grey;
+    width: 100%;
     min-height: 70vh;
 }
 
 header {
     position: fixed;
     top: 0;
-    width: auto;
+    width: 100%;
     
     margin: -1%;
     display: flex;
-    background: slategray;
-    border-bottom:  black solid 4px;
-    border-radius: 5px;
+    background: darkgray;
+    border: solid transparent 10px;
+    border-image: linear-gradient(0.15turn, grey 30%, darkgray 60%);
+    border-image-slice: 1;
     display: grid;
     padding-top: 1%;
-    padding-left: 1%;
+    padding-left: 2%;
     justify-content: space-between;
     align-content: stretch;
     grid-template-columns: 3fr 1fr 1fr;
@@ -78,7 +81,7 @@ nav {
     flex-grow: 1;
     flex: content;
     justify-content: flex-end;
-    border: black 3px;    
+    border: solid darkgray 3px;    
     font-family: Roboto;
     font-weight: bold;
     grid-area: logo-links;

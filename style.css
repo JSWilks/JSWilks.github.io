@@ -57,7 +57,7 @@ header {
     justify-self: center;
     font-size: 1.5rem;
     font-family: Roboto;
-    grid-area: 'quote' 'quote' 'quote';
+    grid-area: 'quote';
 }
 #quote {
     /* background: yellow; */
@@ -67,7 +67,7 @@ header {
     padding-top: 2%;
     font-size: 1.5rem;
     font-family: Spectral;
-    grid-area: 'quote' 'quote' 'quote';
+    grid-area: 'quote';
 }
 a {
     text-decoration: none;
@@ -152,18 +152,32 @@ ul#icons li :hover {
     
 }
 
+#about-me {
+    font-size: xx-large;
+    font-weight: bolder;
+    align-self: center;
+}
+
 #bio {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    display: grid;
 
-    grid-row: auto;
+    /* display: grid;
+    grid-template-areas: 
+        "title title title",
+        "bio bio bio",
+        "blank image blank"; */
+    /* grid-row: auto; */
     padding: 2%;
 }
 
 #back {
-    flex-direction: row;
-    
+    text-align: center;
     padding: 2%;
+}
+
+#back img {
+    border: solid rgba(169, 169, 169, 0.95) 3px;
+    border-radius: 10px;
 }
 
 footer {

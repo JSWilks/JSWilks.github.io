@@ -5,26 +5,26 @@
 
 main {
     margin-top: 22.5vh;
-    
     background-image: url(/images/raptor_draft5.png);
     background-position-y: center;
+    background-position-x: center;
     background-attachment: fixed;
     background-size: contain;
     background-repeat: no-repeat;
     background-color: grey;
     width: 100%;
-    min-height: 70vh;
+    margin-left: -1%;
+    margin-right: -1%;
+    min-height: 50vh;
 }
 
 header {
     position: fixed;
     top: 0;
     width: 100%;
-    
     margin: -1%;
-    display: flex;
     background: darkgray;
-    border: solid transparent 10px;
+    border: solid transparent .2rem;
     border-image: linear-gradient(0.15turn, grey 30%, darkgray 60%);
     border-image-slice: 1;
     display: grid;
@@ -109,6 +109,7 @@ li {
     font-family: Roboto;
     font-weight: bold;
     font-size: larger;
+    text-align: center;
     padding: 5px;
     
 }
@@ -141,10 +142,11 @@ ul#icons li :hover {
 }
 
 .about-me {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-areas: 
+        'title title title'
+        'bio image image';
     justify-content: space-between;
-    /* margin-top: 5px; */
     border: rgba(169, 169, 169, 0.95) solid 5px;
     background: #fff;
     background-color: rgba(169, 169, 169, 0.95);
@@ -152,21 +154,21 @@ ul#icons li :hover {
     
 }
 
+.about-me article {
+    flex-direction: row;
+}
+
 #about-me {
-    font-size: xx-large;
+    grid-area: title;
+    font-size: x-large;
     font-weight: bolder;
-    align-self: center;
+    justify-self: center;
 }
 
 #bio {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
-    /* display: grid;
-    grid-template-areas: 
-        "title title title",
-        "bio bio bio",
-        "blank image blank"; */
-    /* grid-row: auto; */
+    grid-area: bio;
+    font-weight: lighter;
     padding: 2%;
 }
 
@@ -176,14 +178,20 @@ ul#icons li :hover {
 }
 
 #back img {
-    border: solid rgba(169, 169, 169, 0.95) 3px;
-    border-radius: 10px;
+    grid-area: image;
+    border: solid transparent 10px;
+    border-image: linear-gradient(0.13turn, rgb(59, 125, 155) 40%, grey 60%);
+    border-image-slice: 1;
 }
 
 footer {
     display: flex;
+    flex-direction: row;
+    font-size: small;
     background: darkgray;
-    border: solid transparent 10px;
+    border: solid transparent 0.2rem;
     border-image: linear-gradient(0.15turn, grey 30%, darkgray 60%);
     border-image-slice: 1;
+    width: 100%;
+    margin: -1%;
 }

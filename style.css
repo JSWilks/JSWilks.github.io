@@ -24,7 +24,7 @@ header {
     width: 100%;
     margin: -1%;
     background: darkgray;
-    border: solid transparent .2rem;
+    border: solid transparent .4rem;
     border-image: linear-gradient(0.15turn, grey 30%, darkgray 60%);
     border-image-slice: 1;
     display: grid;

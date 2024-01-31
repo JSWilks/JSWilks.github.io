@@ -37,17 +37,18 @@ header {
     padding-top: 1%;
     padding-left: 2%;
     justify-content: space-around;
-    align-content: space-around;
-    grid-template-columns: 3fr 1fr 1fr;
+    align-content: center;
+    grid-template-columns: 4fr 1fr;
     
     grid-template-areas: 
-        "name name logo-links"
-        "quote quote logo-links";
+        "name logo-links"
+        "quote logo-links";
 }
+
 #name {
-    margin-top: 0%;
+    margin-top: 5%;
     flex-grow: inherit;
-    background-color: rgba(195, 195, 195, 0.7);
+    background-color: rgba(195, 195, 195, 0.8);
     /* background: green; */
     /* border:  solid black 5px; */
     font-family: Roboto;
@@ -57,6 +58,7 @@ header {
     grid-area: 'name';
 }
 #title{
+    padding-top: 1%;
     flex-grow: 3;
     border: none;
     position: top;
@@ -82,8 +84,8 @@ a:hover {
     text-decoration: underline;
 }
 nav {
-    background-color: rgba(195, 195, 195, 0.7);
-    padding-right: 10px;
+    background-color: rgba(190, 190, 190, 0.8);
+    padding: 5%;
     flex-flow: column;
     flex-grow: 1;
     flex: content;
@@ -92,6 +94,7 @@ nav {
     font-family: Roboto;
     font-weight: bold;
     grid-area: logo-links;
+    max-height: 200px;
 }
 
 li {
